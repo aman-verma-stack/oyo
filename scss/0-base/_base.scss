@@ -93,11 +93,11 @@ a {
     }
 
     @media (min-width: $break-md-2) and (max-width: $break-md-3) {
-        display: none;
+        display: block;
     }
 
     @media (min-width: $break-lg) and (max-width: $break-Xlg) {
-        display: none;
+        display: block;
     }
     @media (min-width: $break-Xlg2) and (max-width: $break-Xlg3) {
         display: block;
@@ -113,11 +113,11 @@ a {
     }
 
     @media (min-width: $break-md-2) and (max-width: $break-md-3) {
-        display: block;
+        display: none;
     }
 
     @media (min-width: $break-lg) and (max-width: $break-Xlg) {
-        display: block;
+        display: none;
     }
     @media (min-width: $break-Xlg2) and (max-width: $break-Xlg3) {
         display: none;

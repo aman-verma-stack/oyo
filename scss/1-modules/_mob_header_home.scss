@@ -1,0 +1,8 @@
+.mob_header{
+    background: $header_red;
+    .mob_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
