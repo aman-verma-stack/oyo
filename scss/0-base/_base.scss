@@ -1,0 +1,122 @@
+@import "../3-variables/variables";
+@import "../3-variables/mixins";
+@import "../1-modules/login_popup.scss";
+
+html {
+    font-size: $font-14;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: $white;
+}
+
+*,
+ul,
+ol {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+input[type="text"]::-ms-clear {
+    display: none;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+    display: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+a,
+li,
+p {
+    font-size: $font-14;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.custom_container {
+    @media (min-width: $break-XXlg) {
+        max-width: 1280px;
+    }
+    max-width: 90%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.custom_dropdown {
+    display: none;
+}
+.custom_dropdown.show {
+    display: block;
+    position: absolute;
+}
+
+.title_heading {
+    color: $black2;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+
+.badge{
+    padding: 5px;
+    &.badge_green{
+        background: $green;
+        color: $white;
+        font-size: $font-15;
+        margin: 10px 0;
+    }
+}
