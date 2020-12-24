@@ -83,52 +83,6 @@ a {
     outline: none;
 }
 
-.web_dis{
-    display: block;
-    @media (max-width: $break-sm) {
-        display: none;
-    }
-    @media (min-width: $break-sm) and (max-width: $break-md) {
-        display: none;
-    }
-
-    @media (min-width: $break-md-2) and (max-width: $break-md-3) {
-        display: none;
-    }
-
-    @media (min-width: $break-lg) and (max-width: $break-Xlg) {
-        display: none;
-    }
-    @media (min-width: $break-Xlg2) and (max-width: $break-Xlg3) {
-        display: block;
-    }
-}
-.mob_dis{
-    display: block;
-    @media (max-width: $break-sm) {
-        display: block;
-    }
-    @media (min-width: $break-sm) and (max-width: $break-md) {
-        display: block;
-    }
-
-    @media (min-width: $break-md-2) and (max-width: $break-md-3) {
-        display: block;
-    }
-
-    @media (min-width: $break-lg) and (max-width: $break-Xlg) {
-        display: block;
-    }
-    @media (min-width: $break-Xlg2) and (max-width: $break-Xlg3) {
-        display: none;
-    }
-    @media (min-width: $break-Xlg3){
-        display: none;
-    }
-}
-
-
-
 .custom_container {
     @media (min-width: $break-XXlg) {
         max-width: 1280px;

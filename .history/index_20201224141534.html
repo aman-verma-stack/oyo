@@ -953,7 +953,6 @@
 
 
   <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.bundle.js"></script>
   <script type="text/javascript" src="js/moment.min.js"></script>
   <script type="text/javascript" src="js/daterangepicker.min.js"></script>
   <script>
@@ -987,14 +986,13 @@
   <script>
     $(function () {
       $('input[name="daterange"]').daterangepicker({
-        opens: 'left',
-        startDate: moment().startOf('hour'),
+        opens: 'left'
       }, function (start, end, label) {
         console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
       });
     });
   </script>
-  
+  <script src="js/bootstrap.bundle.js"></script>
 
   <script>
     $(document).ready(function () {
