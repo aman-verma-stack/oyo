@@ -11,6 +11,9 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0px;
+    @media (max-width: $break-sm) {
+        overflow-x: scroll;
+    }
     .box {
         position: relative;
         display: flex;
@@ -20,6 +23,10 @@
         border-radius: 8px;
         flex-basis: 28.66%;
         width: 28.66%;
+        @media (max-width: $break-sm) {
+            flex-basis: 25% !important;
+            width: 25% !important;
+        }
         h3 {
             font-size: 20px;
             font-weight: 700;
@@ -35,6 +42,10 @@
         &.box_one {
             flex-basis: 14%;
             width: 14%;
+            @media (max-width: $break-sm) {
+                flex-basis: 25% !important;
+                width: 25% !important;
+            }
             img {
                 position: relative;
                 max-width: 165px;
@@ -87,6 +98,9 @@
         .owl-prev {
             position: absolute;
             left: -25px;
+            @media (max-width: $break-sm) {
+                left: -15px;
+            }
             top: 47%;
             font-size: 50px !important;
             background: $white !important;
@@ -105,6 +119,9 @@
         .owl-next {
             position: absolute;
             right: -25px;
+            @media (max-width: $break-sm) {
+                right: -15px;
+            }
             top: 50%;
             font-size: 50px !important;
             background: $white !important;
@@ -131,6 +148,9 @@
     padding: 20px;
     .deal_section {
         padding-right: 60px;
+        @media (max-width: $break-sm) {
+            padding-right: 0px;
+        }
     }
     .deal_subscribe {
         input {
@@ -141,6 +161,9 @@
             padding: 0.375rem 2.75rem 0.375rem 1rem;
             border-right: none;
             width: 220px;
+            @media (max-width: $break-sm) {
+                width: 159px;
+            }
         }
         .subscribe_button {
             color: #212529;
@@ -209,6 +232,9 @@
             .owl-prev {
                 position: absolute;
                 left: -25px;
+                @media (max-width: $break-sm) {
+                    left: -15px;
+                }
                 top: 47%;
                 font-size: 50px !important;
                 background: $white !important;
@@ -227,6 +253,9 @@
             .owl-next {
                 position: absolute;
                 right: -25px;
+                @media (max-width: $break-sm) {
+                    right: -15px;
+                }
                 top: 50%;
                 font-size: 50px !important;
                 background: $white !important;
@@ -249,35 +278,59 @@
 .trip_offer {
     background: $back_grey;
     padding: 80px;
+    @media (max-width: $break-sm) {
+        padding: 50px 0px;
+    }
     .offer_inside_wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         a {
             flex-basis: 48%;
             width: 48%;
+            @media (max-width: $break-sm) {
+                flex-basis: 100%;
+                width: 100%;
+            }
             img {
                 width: 100%;
                 border-radius: 25px;
                 height: 200px;
+                @media (max-width: $break-sm) {
+                    height: auto;
+                }
                 object-fit: cover;
             }
         }
         .join_offer {
             flex-basis: 48%;
             width: 48%;
+            @media (max-width: $break-sm) {
+                flex-basis: 100%;
+                width: 100%;
+                margin-top: 20px;
+            }
             position: relative;
             .join_content {
                 position: absolute;
                 top: 28%;
                 right: 0;
                 left: 13%;
+                @media (max-width: $break-sm) {
+                    top: 20%;
+                    left: 6%;
+                }
                 p {
                     font-size: $font-18;
                     color: $white;
                     text-transform: capitalize;
                     margin: 0px 0px 10px;
                     font-weight: 600;
+                    @media (max-width: $break-sm) {
+                        font-size: $font-14;
+                        margin: 0px 0px 2px;
+                    }
                     &:nth-child(2) {
                         color: rgb(117, 118, 123);
                         font-weight: normal;
@@ -296,6 +349,9 @@
                 width: 100%;
                 border-radius: 25px;
                 height: 200px;
+                @media (max-width: $break-sm) {
+                    height: auto;
+                }
                 object-fit: cover;
             }
         }
@@ -305,6 +361,10 @@
 .quick_hotel_search {
     margin-top: 100px;
     margin-bottom: 100px;
+    @media (max-width: $break-sm) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .area_hotel_search {
         &::before {
             content: "";

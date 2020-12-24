@@ -150,11 +150,14 @@
         <h3>Book a FabHotel <span class="mob_header_subheading">Choose from 600+ Budget Hotels in India </span></h3>
         <div class="mob_search">
           <form>
-            <div class="">
-              <input type="text" />
+            <div class="mob_search_field_container">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search for city, locality or landmark" />
             </div>
-            <div class="date_gues_container">
-              <div class="mob_date"></div>
+            <div class="date_guest_container">
+              <div class="mob_date">
+                <input type="text" name="daterange" />
+              </div>
               <div class="guest_sellect">
                 <select value="">
                   <option value="1">1</option>
@@ -174,6 +177,11 @@
                   <option value="15">15</option>
                 </select>
               </div>
+            </div>
+            <div class="search_button">
+              <button class="btn btn-primary">Search FabHotels</button>
+              <p>Or</p>
+              <a href="javascript:;"><i class="fas fa-location-arrow"></i> Search FabHotels Near You</a>
             </div>
           </form>
         </div>
@@ -326,7 +334,7 @@
   </div>
 
 
-  <div class="web_dis">
+
   <div class="onscroll_form">
     <div class="onscroll_logo">
       <img src="img/logo.png" alt="logo">
@@ -370,64 +378,64 @@
       <a href="javascript:;"><i class="far fa-user-circle"></i> Login / Signup</a>
     </div>
   </div>
-</div>
 
 
-<div class="web_dis">
-  <div class="search_banner">
-    <img src="img/search-back.png" class="image_one" alt="search back">
-    <img src="img/search-back2.png" class="image_two" alt="search back">
-    <div class="container-fluid container_wrapper">
-      <h1 class="center">World's Fastest Growing Hotel Chain</h1>
-      <div class="search">
-        <form class="custom_form" method="POST">
-          <div class="form-group search_city">
-            <input type="text" class="form-control" placeholder="Search by city, hotel, or neighboborhood" />
-            <div class="nearby_component" onclick="getLocation()"><span class="nearby_component_text"><img
-                  src="img/target.png" alt="target"> Near me</span></div>
-          </div>
-          <div class="form-group banner_daterange">
-            <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="form-control" />
-          </div>
-          <div class="form-group guest">
-            <input type="text" class="form-control" id="guest_show" value="1 Room, 1 Guest" readonly />
 
-            <div class="guest_wrapper">
+  <div class="web_dis">
+    <div class="search_banner">
+      <img src="img/search-back.png" class="image_one" alt="search back">
+      <img src="img/search-back2.png" class="image_two" alt="search back">
+      <div class="container-fluid container_wrapper">
+        <h1 class="center">World's Fastest Growing Hotel Chain</h1>
+        <div class="search">
+          <form class="custom_form" method="POST">
+            <div class="form-group search_city">
+              <input type="text" class="form-control" placeholder="Search by city, hotel, or neighboborhood" />
+              <div class="nearby_component" onclick="getLocation()"><span class="nearby_component_text"><img
+                    src="img/target.png" alt="target"> Near me</span></div>
+            </div>
+            <div class="form-group banner_daterange">
+              <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="form-control" />
+            </div>
+            <div class="form-group guest">
+              <input type="text" class="form-control" id="guest_show" value="1 Room, 1 Guest" readonly />
 
-              <div class="guest_header">
-                <span>Rooms</span>
-                <span>Guest</span>
-              </div>
-              <div class="guest_body">
-                <div class="gues_container">
-                  <p>Room 1</p>
-                  <p><span class="less">-</span> <span class="value">1</span> <span class="add">+</span></p>
-                  <p><span class="del">-</span></p>
+              <div class="guest_wrapper">
+
+                <div class="guest_header">
+                  <span>Rooms</span>
+                  <span>Guest</span>
                 </div>
-              </div>
-              <div class="guest_foot">
-                <span class="add_room">+ Add Room</span>
-              </div>
+                <div class="guest_body">
+                  <div class="gues_container">
+                    <p>Room 1</p>
+                    <p><span class="less">-</span> <span class="value">1</span> <span class="add">+</span></p>
+                    <p><span class="del">-</span></p>
+                  </div>
+                </div>
+                <div class="guest_foot">
+                  <span class="add_room">+ Add Room</span>
+                </div>
 
+
+              </div>
 
             </div>
-
+            <div class="form-group">
+              <button class="btn btn-primary baner_form_btn">Submit</button>
+            </div>
+          </form>
+          <div class="bottom_tags_wrapper">
+            <span>Continue your search</span>
+            <a href="javascript:;" class="banner_tags">Mathura - 1 Guest</a>
+            <a href="javascript:;" class="banner_tags">All Localities - 2 Guest</a>
+            <a href="javascript:;" class="banner_tags">Red Fort - 1 Guest</a>
+            <a href="javascript:;" class="banner_tags">Kashmiri Gate ISBT - 1 Guest</a>
           </div>
-          <div class="form-group">
-            <button class="btn btn-primary baner_form_btn">Submit</button>
-          </div>
-        </form>
-        <div class="bottom_tags_wrapper">
-          <span>Continue your search</span>
-          <a href="javascript:;" class="banner_tags">Mathura - 1 Guest</a>
-          <a href="javascript:;" class="banner_tags">All Localities - 2 Guest</a>
-          <a href="javascript:;" class="banner_tags">Red Fort - 1 Guest</a>
-          <a href="javascript:;" class="banner_tags">Kashmiri Gate ISBT - 1 Guest</a>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
@@ -789,9 +797,6 @@
             </div>
           </div>
 
-
-
-
         </div>
       </div>
     </div>
@@ -799,16 +804,19 @@
 
 
 
-
-
-
   <footer>
     <div class="frenchise_section">
       <div class="frenchise_content">
-        <h3>Want to grow your business? Become a partner.</h3>
-        <p>We increase occupancy, lower your marketing costs, and help provide fabulous stays. More than 600 Hotel
-          owners
-          and 40 Lakh customers believe in us.</p>
+        <div class="web_dis">
+          <h3>Want to grow your business? Become a partner.</h3>
+          <p>We increase occupancy, lower your marketing costs, and help provide fabulous stays. More than 600 Hotel
+            owners
+            and 40 Lakh customers believe in us.</p>
+        </div>
+        <div class="mob_dis">
+          <h3>Partner with us!</h3>
+          <p>Join our network of 600+ franchise owners.</p>
+        </div>
       </div>
       <a href="javascript:;" class="frenchise_cta">Be a Franchise</a>
     </div>
@@ -1011,6 +1019,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/moment.min.js"></script>
   <script type="text/javascript" src="js/daterangepicker.min.js"></script>
   <script>
@@ -1020,8 +1029,6 @@
         get_num = Number(one) + 1;
         $('.value').html(get_num);
       });
-
-
       $('.less', this).click(function () {
         one = $('.value').html();
         get_num = Number(one) - 1;
@@ -1051,8 +1058,6 @@
       });
     });
   </script>
-
-
   <script>
     $(document).ready(function () {
       $('#guest_show').click(function () {
@@ -1087,8 +1092,6 @@
 
     });
   </script>
-
-  <script src="js/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function () { $(".hotels_list .owl-carousel").owlCarousel({ loop: !0, margin: 10, nav: !0, responsive: { 0: { items: 1 }, 600: { items: 3 }, 1000: { items: 4 } } }) });
   </script>
