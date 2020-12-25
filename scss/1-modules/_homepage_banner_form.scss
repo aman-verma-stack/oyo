@@ -70,10 +70,16 @@
 		}
 		.banner_daterange {
 			flex-basis: 15%;
+			@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+				flex-basis: 24%;
+			}
 		}
 		.guest {
 			flex-basis: 15%;
 			position: relative;
+			@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+				flex-basis: 19%;
+			}
 			.guest_wrapper {
 				background: $white;
 				position: absolute;
@@ -173,6 +179,9 @@
 	.bottom_tags_wrapper {
 		width: 71%;
 		margin: 10px auto 0;
+		@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+			width: 98%;
+		}
 		a {
 			color: $white;
 			font-size: $font-12;
@@ -182,12 +191,20 @@
 			text-decoration: none;
 			padding: 8px;
 			margin-right: 16px;
+			@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+				font-size: 9px;
+				margin-right: 6px;
+			}
 		}
 		span {
 			color: $white;
 			font-weight: 600;
 			font-size: $font-16;
 			margin-right: 16px;
+			@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+				font-size: 12px;
+				margin-right: 9px;
+			}
 		}
 	}
 }

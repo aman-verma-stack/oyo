@@ -15,6 +15,14 @@
         overflow-x: scroll;
         justify-content: flex-start;
     }
+    @media(min-width: $break-sm-2) and (max-width: $break-md){
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
     .box {
         position: relative;
         display: flex;
@@ -25,6 +33,14 @@
         flex-basis: 28.66%;
         width: 28.66%;
         @media (max-width: $break-sm) {
+            flex: 0 0 300px;
+            width: 300px;
+        }
+        @media(min-width: $break-sm-2) and (max-width: $break-md){
+            flex: 0 0 300px;
+            width: 300px;
+        }
+        @media (min-width: $break-md-2) and (max-width: $break-md-3) {
             flex: 0 0 300px;
             width: 300px;
         }
@@ -44,6 +60,14 @@
             flex-basis: 14%;
             width: 14%;
             @media (max-width: $break-sm) {
+                flex: 0 0 300px;
+                width: 300px;
+            }
+            @media(min-width: $break-sm-2) and (max-width: $break-md){
+                flex: 0 0 300px;
+                width: 300px;
+            }
+            @media (min-width: $break-md-2) and (max-width: $break-md-3) {
                 flex: 0 0 300px;
                 width: 300px;
             }
@@ -288,6 +312,9 @@
     @media (min-width: $break-sm-2) and (max-width: $break-md) {
         padding: 30px;
     }
+    @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+        padding: 30px 10px;
+    }
     .offer_inside_wrapper {
         display: flex;
         justify-content: space-between;
@@ -304,6 +331,10 @@
                 flex-basis: 100%;
                 width: 100%;
             }
+            @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+                flex-basis: 47%;
+                width: 47%;
+            }
             img {
                 width: 100%;
                 border-radius: 25px;
@@ -312,6 +343,9 @@
                     height: auto;
                 }
                 @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                    height: auto;
+                }
+                @media (min-width: $break-md-2) and (max-width: $break-md-3) {
                     height: auto;
                 }
                 object-fit: cover;
@@ -330,6 +364,11 @@
                 width: 100%;
                 margin-top: 20px;
             }
+            @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+                flex-basis: 50%;
+                width: 50%;
+                margin-top: 0px;
+            }
             position: relative;
             .join_content {
                 position: absolute;
@@ -344,6 +383,10 @@
                     top: 21%;
                     left: 6%;
                 }
+                @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+                    top: 12%;
+                    left: 7%;
+                }
                 p {
                     font-size: $font-18;
                     color: $white;
@@ -353,6 +396,9 @@
                     @media (max-width: $break-sm) {
                         font-size: $font-14;
                         margin: 0px 0px 2px;
+                    }
+                    @media (min-width: $break-md-2) and (max-width: $break-md-3) {
+                        font-size: 15px;
                     }
                     &:nth-child(2) {
                         color: rgb(117, 118, 123);
@@ -376,6 +422,9 @@
                     height: auto;
                 }
                 @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                    height: auto;
+                }
+                @media (min-width: $break-md-2) and (max-width: $break-md-3) {
                     height: auto;
                 }
                 object-fit: cover;

@@ -22,6 +22,9 @@
 		p {
 			margin: 0 0 8px 0;
 			color: rgba(0, 0, 0, 0.7);
+			@media (min-width: $break-md-2) and (max-width: $break-md-3) {
+				font-size: 12px;
+			}
 		}
 
 		.sub_menu {
