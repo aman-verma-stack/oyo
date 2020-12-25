@@ -22,6 +22,9 @@ footer {
             padding: 12px;
             width: 90%;
         }
+        @media (min-width: $break-sm-2) and (max-width: $break-md) {
+            width: 90%;
+        }
 
         .frenchise_content {
             flex-basis: 70%;
@@ -29,6 +32,10 @@ footer {
             @media (max-width: $break-sm) {
                 flex-basis: 100%;
                 width: 100%;
+            }
+            @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                flex-basis: 50%;
+                width: 50%;
             }
             h3 {
                 color: rgb(16, 18, 23);
@@ -76,6 +83,10 @@ footer {
             flex-wrap: wrap;
             margin-top: 40px;
         }
+        @media (min-width: $break-sm-2) and (max-width: $break-md) {
+            flex-wrap: wrap;
+            border-bottom: 1px solid #ccc;
+        }
         .quick_links_wrapper {
             flex-basis: 50%;
             width: 50%;
@@ -90,6 +101,11 @@ footer {
                 width: 100%;
                 margin-bottom: 0;
                 border-right: none;
+            }
+            @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                flex-basis: 100%;
+                width: 100%;
+                border-right: 1px solid transparent;
             }
             .quick_link_container {
                 display: flex;
@@ -141,6 +157,11 @@ footer {
                 width: 100%;
                 padding: 0;
                 display: none;
+            }
+            @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                flex-basis: 100%;
+                width: 100%;
+                padding: 30px 0px;
             }
             .app_heading {
                 font-size: 26px;
@@ -218,6 +239,10 @@ footer {
         @media (max-width: $break-sm) {
             flex-wrap: wrap;
         }
+        @media (min-width: $break-sm-2) and (max-width: $break-md) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
         .hotel_city_list {
             p {
                 a {
@@ -228,6 +253,13 @@ footer {
                     transition: all 0.3s ease 0s;
                     opacity: 0.7;
                 }
+            }
+            @media (max-width: $break-sm) {
+                margin: 10px;
+            }
+            @media (min-width: $break-sm-2) and (max-width: $break-md) {
+                flex-basis: 29.33%;
+                margin: 10px;
             }
         }
     }
