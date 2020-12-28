@@ -20,8 +20,10 @@ body {
     -webkit-text-size-adjust: 100%;
     background: $white;
 
-
-    padding-bottom: 60px;
+    @media(max-width: $break-md){
+        padding-bottom: 60px;
+    }
+    
 
 }
 
