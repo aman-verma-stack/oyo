@@ -1,0 +1,45 @@
+@import "../0-base/base";
+@import "../1-modules/header";
+@import "../1-modules/submenu_other";
+@import "../1-modules/mob_header_home";
+@import "../1-modules/footer";
+@import "../1-modules/mob_menu_bottom";
+
+.top_section {
+    height: 20vh;
+    background: linear-gradient(135.46deg, #d11450, #df293a);
+}
+
+.booking_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .booking_left_container {
+        flex: 0 0 68%;
+        position: relative;
+        top: -100px;
+        .hotel_info {
+            padding: 10px 30px;
+            background: $white;
+            border-radius: 1.2rem;
+            h2 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+    .booking_right_container {
+        flex: 0 0 30%;
+        position: relative;
+        top: -100px;
+        .price_summary {
+            padding: 10px 30px;
+            background: $white;
+            border-radius: 1.2rem;
+            h2 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}
