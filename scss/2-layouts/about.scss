@@ -1,0 +1,12 @@
+@import "../0-base/base";
+@import "../1-modules/header";
+@import "../1-modules/submenu_other";
+@import "../1-modules/mob_header_home";
+@import "../1-modules/footer";
+@import "../1-modules/mob_menu_bottom";
+
+
+.top_section {
+    height: 20vh;
+    background: linear-gradient(135.46deg, #d11450, #df293a);
+}
