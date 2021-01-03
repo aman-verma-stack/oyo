@@ -150,43 +150,317 @@
     </div>
 
 
-<div class="top_section">
-
-</div>
+    <div class="top_section"></div>
 
 
-<div class="custom_container">
-    <div class="booking_container">
-        <div class="booking_left_container">
-            <div class="hotel_info">
-                <h2 class="">HOTEL INFO</h2>
+    <div class="custom_container">
+        <div class="booking_container">
+            <div class="booking_left_container">
+                <div class="hotel_info">
+                    <div class="accordion" id="hotel_info">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    HOTEL INFO </h2>
+                                <div class="icon_wrap">
+                                    <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne"></i>
+                                </div>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#hotel_info">
+                                <div class="card-body">
+                                    <div class="hotel_details">
+                                        <div class="hotel_name_wrapper">
+                                            <div class="hotel_image">
+                                                <img src="https://cdn1.goibibo.com/voy_ing/t_srp/5d53235aad1c11e887c00a035d9f8d84.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="hotel_name">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <h4> Country Inn & Suites By Radisson, Candolim Goa</h4>
+                                                <p><i class="fas fa-map-marker-alt"></i> Bamonvaddo, Candolim,Bardez-
+                                                    Goa</p>
+                                            </div>
+                                        </div>
+                                        <div class="check_in_details">
+                                            <div class="box check_in">
+                                                <span class="heading_title">Check In</span>
+                                                <p>Wed, 10 Feb 2021</p>
+                                                <span class="heading_title">02:00 PM</span>
+                                            </div>
+                                            <div class="box check_out">
+                                                <span class="heading_title">Check Out</span>
+                                                <p>Thu, 11 Feb 2021</p>
+                                                <span class="heading_title">11:00 AM</span>
+                                            </div>
+                                            <div class="box check_guest">
+                                                <span class="heading_title">Guests</span>
+                                                <p>1 Guest | 1 Room</p>
+                                                <span class="heading_title">1 Night</span>
+                                            </div>
+                                        </div>
+                                        <div class="check_in_notes">
+                                            <h4>1 x Superior King Room - Non-Smoking with Breakfast</h4>
+                                            <div class="desc">
+                                                <span class="heading_title">Price Includes</span>
+                                                <p>Complimentary Breakfast is available.</p>
+                                                <p class="non_refund"><i class="fas fa-ticket-alt"></i> Non-refundable
+                                                    <a href="javascript:;">Booking and Cancellation Policy</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form>
+                    <div class="guest_details">
+                        <div class="accordion" id="guest_details">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0" >
+                                        GUEST DETAILS</h2>
+                                        <div class="icon_wrap">
+                                            <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="true" aria-controls="collapseTwo"></i>
+                                        </div>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                    data-parent="#guest_details">
+                                    <div class="card-body">
+                                        <div class="guest_details_container">
+                                            <div class="guest_wrapper">
+                                                <div class="title_wrap">
+                                                    <span>Title</span>
+                                                    <select value="">
+                                                        <option value="mr">Mr</option>
+                                                        <option value="mrs">Mrs</option>
+                                                        <option value="miss">Miss</option>
+                                                    </select>
+                                                </div>
+                                                <div class="name_wrap">
+                                                    <span>First Name</span>
+                                                    <input type="text" value="" placeholder="Enter First Name" />
+                                                </div>
+                                                <div class="lastname_wrap">
+                                                    <span>Last Name</span>
+                                                    <input type="text" value="" placeholder="Enter Last Name" />
+                                                </div>
+                                            </div>
+                                            <div class="email_wrap">
+                                                <p>Email Address <small>(Your booking voucher will be sent to this email
+                                                        address)</small></p>
+                                                <input type="text" placeholder="Enter Email Address" />
+                                            </div>
+                                            <div class="mob_wrap">
+                                                <select value="">
+                                                    <option value="dont_no">+91 India</option>
+                                                </select>
+                                                <input type="text" placeholder="Enter Phone Number">
+                                            </div>
+                                            <div class="exptime_wrap">
+                                                <p>Expected Check-in Time</p>
+                                                <select value="">
+                                                    <option value="dont_no">I don't know</option>
+                                                    <option value="mrs">3 PM - 6 PM</option>
+                                                    <option value="mrs">6 PM - 9 PM</option>
+                                                    <option value="mrs">9 PM - 12 PM</option>
+                                                    <option value="mrs">12 AM - 3 AM (Feb 11)</option>
+                                                    <option value="mrs">3 AM - 6 AM (Feb 11)</option>
+                                                </select>
+                                            </div>
+                                            <div class="gst_details">
+                                                <input class="form-check-input" id="gst" type="checkbox" value=""> Enter GST Details <small>(Optional for Business
+                                                    Profile)</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="business_wrapper">
+                                            <h1>BUSINESS PROFILE</h1>
+                                            <div class="business_container">
+                                                <div class="box business_details">
+                                                    <div>
+                                                        <span>GST Number</span>
+                                                        <input type="text" placeholder="EG: 22AAAAAA000A1Z5" />
+                                                    </div>
+
+                                                    <div>
+                                                        <span>Company Name</span>
+                                                        <input type="text" placeholder="Enter Company Name" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="box business_details">
+                                                    <div>
+                                                        <span>Business Email ID</span>
+                                                        <input type="text" placeholder="Enter Email Address" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="box business_details">
+                                                    <div>
+                                                        <span>Company Address</span>
+                                                        <textarea class="form-control" rows="3"
+                                                            placeholder="Enter Company Address"></textarea>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="box business_details">
+                                                    <div>
+                                                        <span>Company Phone Number</span>
+                                                        <input type="text" placeholder="Enter Phone Number" />
+                                                    </div>
+
+                                                    <div>
+                                                        <span>Admin Email ID</span>
+                                                        <input type="text" placeholder="Enter Email Address" />
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select_request">
+                        <div class="accordion" id="select_request">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0" >
+                                        SPECIAL REQUEST</h2>
+                                        <div class="icon_wrap">
+                                            <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree"></i>
+                                        </div>
+                                </div>
+
+                                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                    data-parent="#select_request">
+                                    <div class="card-body">
+                                        <div class="special_req">
+                                            <h3>Special Request</h3>
+                                            <p>(Add any special request for your stay at the Hotel and fulfilment is
+                                                subject
+                                                to hotels discreation and may be chargeable)</p>
+                                            <textarea class="form-control" rows="5"
+                                                placeholder="Enter Special Request"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="proceed_btn">Proceed To Payment Options</button>
+                </form>
+
             </div>
+            <div class="booking_right_container">
+                <div class="price_summary">
+                    <div class="accordion" id="price_summary">
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0" >
+                                    Price Summary</h2>
+                                    <div class="icon_wrap">
+                                        <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                                        aria-controls="collapseFive"></i>
+                                    </div>
+                            </div>
 
-            <form>
-                <div class="guest_details">
-
+                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                                data-parent="#price_summary">
+                                <div class="card-body">
+                                    <div class="price_summary_container">
+                                        <div class="price_box">
+                                            <p>Room Charges (1 room x 1 night)</p>
+                                            <p>₹7151</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <p>Total Discounts</p>
+                                            <p>-₹169</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <p>Price after discounts</p>
+                                            <p>₹6982</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <p>Taxes & Fees</p>
+                                            <p>₹1138</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <p><strong>Pay Now</strong></p>
+                                            <p><strong>₹8120</strong></p>
+                                        </div>
+                                        <p class="offer_emi"><a href="javascript:;">EMI Starts at ₹ 2706/month</a></p>
+                                        <p class="offer_login"><a href="javascript:;"><i class="fas fa-gifts"></i> Login now & get at a lower price</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="offers">
+                    <div class="accordion" id="offers">
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0" >
+                                    OFFERS</h2>
+                                    <div class="icon_wrap">
+                                        <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                        aria-controls="collapseSix"></i>
+                                    </div>
+                            </div>
 
-                <div class="select_request">
-
+                            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix"
+                                data-parent="#offers">
+                                <div class="card-body">
+                                    <div class="promo_container">
+                                        <div class="promo_applied_box">
+                                            <div class="promo_head">
+                                                <p><strong>GETSETGO</strong></p>
+                                                <p class="applied">Applied</p>
+                                            </div>
+                                            <div class="promo_body">
+                                                <p>Congratulations! You have saved ₹169 with GETSETGO.</p>
+                                            </div>
+                                        </div>
+                                        <div class="promo_applied_box">
+                                            <div class="promo_head">
+                                                <p><strong>ENTER PROMO CODE</strong></p>
+                                            </div>
+                                            <div class="promo_body_input">
+                                                <input type="text" placeholder="Enter Promo Code" value="" />
+                                                <button class="apply">Apply</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="select_payment_option">
-
-                </div>
-            </form>
-
-        </div>
-        <div class="booking_right_container">
-            <div class="price_summary">
-                <h2 class="">Price Summary</h2>
-            </div>
-            <div class="offers">
-
             </div>
         </div>
     </div>
-</div>
 
     <footer>
         <div class="custom_container">
@@ -369,6 +643,19 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/moment.min.js"></script>
     <script type="text/javascript" src="js/daterangepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            $('.icon_wrap').click(function () {
+                $('i', this).toggleClass('fa-angle-up');
+            });
+
+            $('.business_wrapper').hide();
+            $('#gst').click(function(){
+                $('.business_wrapper').toggle();
+            })
+        });
+    </script>
 </body>
 
 </html>

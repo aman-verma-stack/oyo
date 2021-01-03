@@ -158,11 +158,11 @@
         <p>Don't go by what we say. Next time you are looking for a value for money stay, give us a shot. You would see what we mean.We would love to hear from you, and answer any questions you may have on anything related to FabHotels.</p>
         <p>You can call us on 01246448598 anytime if you would want to talk to us, or alternately,</p>
         <p>Write to us:</p>
-        <p>For reservation requests: bookings@fabhotels.com</p>
-        <p>For stay feedback: feedback@fabhotels.com</p>
-        <p>For franchise enquiries: partners@fabhotels.com</p>
-        <p>For travel agent enquiries: travelagents@fabhotels.com or call us on 7042424242</p>
-        <p>For careers at FabHotels: hr@fabhotels.com</p>
+        <p>For reservation requests: <a href="javascript:;">bookings@fabhotels.com</a></p>
+        <p>For stay feedback:  <a href="javascript:;">feedback@fabhotels.com</a></p>
+        <p>For franchise enquiries:  <a href="javascript:;">partners@fabhotels.com</a></p>
+        <p>For travel agent enquiries:  <a href="javascript:;">travelagents@fabhotels.com or call us on 7042424242</a></p>
+        <p>For careers at FabHotels:  <a href="javascript:;">hr@fabhotels.com</a></p>
         <p>Stay fab!</p>
     </div>
 </div>
@@ -173,8 +173,14 @@
         <h2>Download our free app <small>(Over 1 Million Downloads)</small></h2>
         <p>App Only Deals | Faster Bookings | Manage Bookings on the go</p>
         <div class="about_banner_button">
-            <a href="javascript:;"></a>
+            <a href="javascript:;" class="android_link"></a>
+            <a href="javascript:;" class="apple_link"></a>
+            <a href="javascript:;" class="get_sms_link">Get Sms Link</a>
         </div>
+    </div>
+    <div class="about_wrapper">
+        <span class="about_qrcode"></span>
+        <p>Scan the QR Code to <a target="_blank" href="/hotel-booking-app/"> download our hotel booking app</a> now!</p>
     </div>
 </div>
 
@@ -357,6 +363,21 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(".langauge_selector").click(function () {
+            $(".custom_dropdown").toggleClass("show");
+          });
+          $(".custom_dropdown li").click(function () {
+            $("li").removeClass("active");
+            $(this).addClass("active");
+          });
+          $(".sub_header_list").hover(function () {
+            $(".sub_menu", this).toggle();
+          });
+    
+        });
+      </script>
 </body>
 
 </html>
