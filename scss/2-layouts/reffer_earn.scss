@@ -1,0 +1,36 @@
+@import "../0-base/base";
+@import "../1-modules/header";
+@import "../1-modules/submenu_other";
+@import "../1-modules/mob_header_home";
+@import "../1-modules/footer";
+@import "../1-modules/mob_menu_bottom";
+@import "../1-modules/bottom_banner";
+
+
+.reffer_container{
+    .steps_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box_left{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 0 0 50%;
+            .image_wrapper{
+                flex: 0 0 50%;
+                width: 50%;
+                img{
+                    width: 613px;
+                }
+            }
+            .content_wrap{
+                flex: 0 0 50%;
+                width: 50%;
+            }
+        }
+        .box_right{
+            flex: 0 0 50%;
+        }
+    }
+}

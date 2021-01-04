@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     .card-header {
         display: flex;
         justify-content: space-between;
@@ -34,6 +35,9 @@
         flex: 0 0 68%;
         position: relative;
         top: -100px;
+        @media (max-width: $break-xsm) {
+            flex: 0 0 100%;
+        }
         h2 {
             font-size: $font-22;
             font-weight: bold;
@@ -77,6 +81,7 @@
                         padding: 16px;
                         border-radius: 1.2rem;
                         margin: 16px 0;
+                        flex-wrap: wrap;
                         .box {
                             margin-right: 25px;
                         }
@@ -131,6 +136,7 @@
                     .guest_details_container {
                         .guest_wrapper {
                             display: flex;
+                            flex-wrap: wrap;
                             div {
                                 margin: 0px 10px;
                                 span {
@@ -273,6 +279,9 @@
         flex: 0 0 30%;
         position: relative;
         top: -100px;
+        @media (max-width: $break-xsm) {
+            flex: 0 0 100%;
+        }
         h2 {
             font-size: $font-22;
             font-weight: bold;
@@ -344,15 +353,15 @@
                         justify-content: space-between;
                         padding: 10px;
                         border-bottom: 0.1rem solid rgb(239, 243, 248);
-                        p{
-                            strong{
+                        p {
+                            strong {
                                 font-size: 15px;
                             }
                         }
                     }
                     .promo_body {
                         padding: 10px;
-                        p{
+                        p {
                             font-weight: bold;
                             font-size: 14px;
                             color: rgb(24, 161, 96);
