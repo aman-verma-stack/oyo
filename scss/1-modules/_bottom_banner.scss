@@ -56,3 +56,78 @@
         }
     }
 }
+
+
+.about_banner_content {
+    .about_banner_button {
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        a{
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+                @media(max-width: 320px){
+                    margin-right: auto;
+                }
+                @media(min-width: 321px) and (max-width: $break-sm){
+                    margin-right: auto;
+                }
+            }
+        }
+        .android_link {
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            background: url("../../img/fab_sprite_v19.png") -124px -1378px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            @media(max-width: 320px){
+                flex: 0 0 50%;
+                margin: 20px auto;
+            }
+            @media(min-width: 321px) and (max-width: $break-sm){
+                margin: 20px auto;
+            }
+            
+        }
+        .apple_link {
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+            background: url("../../img/fab_sprite_v19.png") -124px -1226px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            @media(max-width: 320px){
+                flex: 0 0 50%;
+                margin: 20px auto;
+            }
+            @media(min-width: 321px) and (max-width: $break-sm){
+                
+                margin: 20px auto;
+            }
+            
+        }
+        .get_sms_link {
+            padding: 9px 22px;
+            border-radius: 3px;
+            background-color: #fedd10;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+            color: #1e254a;
+            cursor: pointer;
+            text-decoration: none;
+            @media(max-width: 320px){
+                flex: 0 0 50%;
+                margin: 20px auto;
+            }
+            @media(min-width: 321px) and (max-width: $break-sm){
+                margin: 20px auto;
+            }
+        }
+    }
+}
+

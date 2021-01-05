@@ -34,7 +34,7 @@
 
     <!-- Css Files -->
     <link href="css/base/bootstrap.css" rel="stylesheet" />
-
+    <link href="css/base/owl.carousel.css" rel="stylesheet" />
     <link href="css/2-layouts/reffer_earn.css" rel="stylesheet" />
     <!-- End Css Files -->
 
@@ -219,6 +219,74 @@
                     <a href="javascript:;"><i class="fab fa-facebook-f"></i></a>
                     <a href="javascript:;"><i class="fas fa-envelope"></i></a>
                     <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom_container">
+        <div class="level_wrapper">
+            <div class="center">
+                <h2>Share and win</h2>
+                <p>Share fabulousness! Refer & win big rewards.</p>
+            </div>
+            <div class="box_wrapper">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="box">
+                            <span class="lock"><i class="fas fa-lock"></i> Level Locked</span>
+                            <h3>Level 1</h3>
+                            <p>Signup to unlock</p>
+                            <p>500 Fab credits for every friend you refer</p>
+                            <p>Surprise scratch card on level completion</p>
+                            <a href="javascript:;">Know More</a>
+                            <span class="num_wrap">1</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <span class="lock"><i class="fas fa-lock"></i> Level Locked</span>
+                            <h3>Level 2</h3>
+                            <p>Signup to unlock</p>
+                            <p>500 Fab credits for every friend you refer</p>
+                            <p>Surprise scratch card on level completion</p>
+                            <a href="javascript:;">Know More</a>
+                            <span class="num_wrap">2</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <span class="lock"><i class="fas fa-lock"></i> Level Locked</span>
+                            <h3>Level 3</h3>
+                            <p>Signup to unlock</p>
+                            <p>500 Fab credits for every friend you refer</p>
+                            <p>Surprise scratch card on level completion</p>
+                            <a href="javascript:;">Know More</a>
+                            <span class="num_wrap">3</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <span class="lock"><i class="fas fa-lock"></i> Level Locked</span>
+                            <h3>Level 4</h3>
+                            <p>Signup to unlock</p>
+                            <p>500 Fab credits for every friend you refer</p>
+                            <p>Surprise scratch card on level completion</p>
+                            <a href="javascript:;">Know More</a>
+                            <span class="num_wrap">4</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <span class="lock"><i class="fas fa-lock"></i> Level Locked</span>
+                            <h3>Level 5</h3>
+                            <p>Signup to unlock</p>
+                            <p>500 Fab credits for every friend you refer</p>
+                            <p>Surprise scratch card on level completion</p>
+                            <a href="javascript:;">Know More</a>
+                            <span class="num_wrap">5</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -421,6 +489,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".langauge_selector").click(function () {
@@ -434,6 +503,17 @@
                 $(".sub_menu", this).toggle();
             });
 
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".box_wrapper .owl-carousel").owlCarousel({
+                loop: !0, margin: 10, nav: 0, responsive: {
+                    0: { items: 1 },
+                    500: { items: 2 },
+                    600: { items: 3 }, 1000: { items: 4 }
+                }
+            })
         });
     </script>
 </body>

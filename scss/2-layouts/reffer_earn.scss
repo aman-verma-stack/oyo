@@ -138,18 +138,141 @@
             align-items: center;
             a {
                 display: flex;
-                width: 50px;
-                height: 50px;
-                border-radius: 100%;
                 text-align: center;
                 padding: 6px;
                 text-decoration: none;
+                color: $white;
                 i {
-                    font-size: 38px;
+                    font-size: 34px;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100%;
+                    padding: 12px;
+                    margin: 0 auto;
                 }
-                .fa-facebook-f{
-                    padding-left: 7px;
+                .fa-facebook-messenger {
+                    background: rgb(0, 131, 255);
                 }
+                .fa-facebook-f {
+                    background: rgb(55, 89, 159);
+                }
+                .fa-envelope {
+                    background: rgb(196, 37, 21);
+                }
+                .fa-twitter {
+                    background: rgb(69, 145, 194);
+                }
+            }
+        }
+    }
+}
+.level_wrapper {
+    width: 1154px;
+    padding: 0px 0px 0 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    h2 {
+        font-size: 26px;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+    p {
+        font-size: 18px;
+        color: #898989;
+    }
+
+    .box_wrapper {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        .owl-stage-outer{
+            overflow: visible;
+        }
+        
+        .item {
+            border-radius: 4px;
+            box-shadow: 0 2px 4px 0 rgba(193, 193, 193, 0.5);
+            border: solid 1px #d7d7d7;
+            background: $white;
+            padding: 30px 12px 25px 35px;
+            &.active{
+                margin-left: 25px;
+            }
+            .box {
+                .lock {
+                    position: absolute;
+                    top: -17px;
+                    background: #ccc;
+                    padding: 5px 20px;
+                    border-radius: 16px;
+                    z-index: 9999;
+                    left: 10px;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #202c60;
+                    padding-bottom: 30px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    margin-left: -20px;
+                    padding: 0px 0;
+                    &::before {
+                        content: "\2713";
+                        font-size: 18px;
+                    }
+                }
+                .num_wrap {
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    width: 71px;
+                    height: 71px;
+                    background: rgba(126, 129, 165, 0.7);
+                    border-radius: 100%;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 12px;
+                }
+            }
+        }
+        .owl-nav{
+            .owl-prev{
+                padding: 0px !important;
+                position: absolute;
+                left: -37px;
+                top: 33%;
+                font-size: 41px;
+                width: 45px;
+                height: 45px;
+                background: #fff;
+                text-align: center;
+                border-radius: 100%;
+                box-shadow: 0 2px 4px 0 rgba(193,193,193,0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+            }
+            .owl-next{
+                padding: 0px !important;
+                position: absolute;
+                right: -37px;
+                top: 33%;
+                font-size: 41px;
+                width: 45px;
+                height: 45px;
+                background: #fff;
+                text-align: center;
+                border-radius: 100%;
+                box-shadow: 0 2px 4px 0 rgba(193,193,193,0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
             }
         }
     }
